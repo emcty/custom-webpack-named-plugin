@@ -1,0 +1,22 @@
+{
+  "name": "customWebpackNamedPlugin",
+  "version": "1.0.0",
+  "description": "a webpack modules custom name plugin",
+  "main": "index.js",
+  "keywords": [
+    "webpack",
+    "webpackPlugin",
+    "customNamedPlugin",
+    "customHashedPlugin"  
+  ],
+  "author": {
+    "name": "leiDing",
+    "email": "emcty1227@163.com",
+    "url": "https://github.com/emcty"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT"
+}
