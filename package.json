@@ -1,6 +1,6 @@
 {
   "name": "customWebpackNamedPlugin",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "a webpack modules custom name plugin",
   "main": "index.js",
   "keywords": [
@@ -16,7 +16,8 @@
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/emcty/custom-webpack-named-plugin.git"
   },
+  "_from": "custom-webpack-named-plugin@0.0.1",
   "license": "MIT"
 }
