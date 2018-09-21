@@ -1,5 +1,5 @@
 {
-  "name": "customWebpackNamedPlugin",
+  "name": "custom-webpack-named-plugin",
   "version": "0.0.1",
   "description": "a webpack modules custom name plugin",
   "main": "index.js",
