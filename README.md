@@ -11,40 +11,56 @@ This is a custom module plugin package for webpack. it allows you to command you
 ```bash
   yarn add --dev custom-webpack-named-plugin
 ```
-if you use hashedModuleIds of webpack>=4
+### hashedPlugin
+if you use hashedModuleIds of webpack>=4 or HashedModuleIdsPlugin of webpack<4
 ```bash
   let CustomHashedPlugin = require("custom-webpack-named-plugin").hashedPlugin
-  plugins:{
+```
+the default type of mapping object is String
+**webpack.config.js**
+```bash
+  plugins: [
     new CustomHashedPlugin({
       mapping:{
-        './src/(\\w+).js':'$1'
+        type: 'String',
+        match: {
+          './src/index.js':'customName'
+        }
       }
     })
-    
-    new CustomHashedPlugin({
-      mapping:{
-        './src/index.js':'customName'
-      }
-    })
-  }
+  ]
   
 ```
-
-if you use namedModules of webpack>=4
+### namedPlugin
+if you use namedModules of webpack>=4 or Namedmodulesplugin of webpack<4
 ```bash
   let CustomNamedPlugin = require("custom-webpack-named-plugin").namedPlugin
-  plugins:{
+```
+**webpack.config.js**
+
+```bash
+  plugins: [
     new CustomNamedPlugin({
       mapping:{
+        type: 'String',
+        match: {
+          './src/index.js':'customName'
+        }
+      }
+    })
+  ] 
+
+```
+it also allows you use RegExp type
+** webpack.config.js **
+```bash
+  plugins: [
+    new CustomNamedPlugin({
+      mapping:{
+        type: 'RegExp'
         './src/(\\w+).js':'$1'
       }
     })
-    
-    new CustomNamedPlugin({
-      mapping:{
-        './src/index.js':'customName'
-      }
-    })
-  }
-  
+  ]
+
 ```
