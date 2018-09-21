@@ -52,7 +52,7 @@ if you use namedModules of webpack>=4 or Namedmodulesplugin of webpack<4
 
 ```
 it also allows you use RegExp type
-** webpack.config.js **
+**webpack.config.js**
 ```bash
   plugins: [
     new CustomNamedPlugin({
